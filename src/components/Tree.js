@@ -430,7 +430,11 @@ function Tree(props) {
     const range = RegExp("^[0-9]+-[0-9]+$").test(phrase)
 
     if (comma_sep_values) {
-      return phrase.split(",")
+      let vals =  phrase.split(",")
+      vals.forEach((item, i) => {
+        vals[i] = parseInt(item)
+      });
+      return vals
     }
 
     else if (range) {
