@@ -380,7 +380,7 @@ const PALLETE = {
     "border_and_line": "#000000"
 }
 
-const BR_LINK = ""
+const BR_LINK = "https://github.com/Himaghna-Senarath/binarytree/issues"
 
 function Tree(props) {
   const [tree_id, set_tree_id] = useState(0)
